@@ -26,3 +26,19 @@ npm run build
 
 ### 6、build for production and view the bundle analyzer report
 npm run build --report
+
+## 相关文档
+
+### vue-router文档
+https://router.vuejs.org/zh-cn/
+
+### ElementUi
+http://element-cn.eleme.io/#/zh-CN
+
+### axio中文使用文档
+https://www.kancloud.cn/yunye/axios/234845
+
+### moment中文文档
+http://momentjs.cn/docs/
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
