@@ -7,10 +7,10 @@ import 'normalize.css/normalize.css'// A modern alternative to CSS resets
 import ElementUi from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
-import '@/styles/index.scss' // global css
+import '@/styles/common.scss'; // global css
 
 import App from './App';
-//import router from './router'
+import router from './router/router'
 
 
 Vue.use(ElementUi, {
@@ -21,6 +21,7 @@ Vue.config.productionTip = false;
 
 new Vue({
   el: '#app',
+  router,
   template: '<App/>',
   components: { App }
 });

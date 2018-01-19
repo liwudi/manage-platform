@@ -1,0 +1,32 @@
+@import "./paddingMargin.scss";
+
+@import "./color-definition.scss";
+.wrapper,#app,html,body{
+  width: 100%;
+  height: 100%;
+}
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+//flex
+.flex-box{
+  display: flex;
+}
+.flex-col-box{
+  flex-direction: column;
+}
+.flex1{
+  flex: 1;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

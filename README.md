@@ -35,7 +35,7 @@ https://router.vuejs.org/zh-cn/
 ### ElementUi
 http://element-cn.eleme.io/#/zh-CN
 
-### axio中文使用文档
+### axios中文使用文档
 https://www.kancloud.cn/yunye/axios/234845
 
 ### moment中文文档
