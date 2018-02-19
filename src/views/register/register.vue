@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper center flex-col-box login-background">
+    <div style="color: red">{{mydata}}</div>
     <div class="login-title">在线教育管理平台</div>
     <div class="login-box flex-col-box center">
       <el-form :model="formData" ref="registerForm" :rules="rules" label-position="left" label-width="80px" >
@@ -85,6 +86,11 @@
           ]
         },
       }
+    },
+    computed: {
+        mydata: function () {
+          return this.$store.state.num;
+        }
     },
     methods: {
       handleChange(val) {

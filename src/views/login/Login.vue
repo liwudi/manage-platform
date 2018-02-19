@@ -1,6 +1,12 @@
 <template>
   <div class="wrapper center flex-col-box login-background">
+    <div style="color: red">
+      <button v-on:click="clickdecEvent">dec</button>
+      {{myNum}}
+      <button v-on:click="clickEvent">add</button>
+    </div>
     <div class="login-title">在线教育管理平台</div>
+
     <div class="login-box flex-col-box center">
       <el-form :model="formData" ref="myForm" :rules="rules" label-position="left" label-width="80px" >
 
@@ -43,7 +49,18 @@
         },
       }
     },
+    computed: {
+        myNum(){
+            return this.$store.state.num
+        }
+    },
     methods: {
+      clickEvent(){
+        this.$store.commit('add');
+      },
+      clickdecEvent(){
+        this.$store.commit('dec');
+      },
       handleChange(val) {
         console.log(val);
       },
