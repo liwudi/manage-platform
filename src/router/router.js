@@ -10,6 +10,7 @@ import Main from '@/views/main/Main.vue';
 
 //Main下面展示的主要界面。
 import Charts from '@/views/main/charts/Charts.vue';
+import UpLoad from '@/views/main/upload/UpLoad.vue';
 
 
 Vue.use(Router);
@@ -25,8 +26,8 @@ export const constantRouterMap = [
       path: '',
       component: Charts
     },{
-      path: 'charts',
-      component: Charts
+      path: 'upload',
+      component: UpLoad
     },{
       path: 'charts1',
       component: Charts

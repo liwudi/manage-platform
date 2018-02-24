@@ -5,6 +5,9 @@
   width: 100%;
   height: 100%;
 }
+a{
+  text-decoration: none;
+}
 body {
   height: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -34,4 +37,5 @@ body {
 .border{
   border: 1px solid #cccccc;
 }
+
 

@@ -66,7 +66,7 @@
           </el-submenu>
           <el-menu-item index="2">
             <i class="el-icon-menu"></i>
-            <span slot="title">导航二</span>
+            <span slot="title"><router-link to="/upload">Upload</router-link></span>
           </el-menu-item>
           <el-menu-item index="3">
             <i class="el-icon-setting"></i>
@@ -103,7 +103,11 @@
         loginOut(){
           this.$router.replace('/login')
         }
+    },
+    created: function () {
+      console.log(this.$route)
     }
+
   }
 </script>
 
@@ -128,5 +132,8 @@
     right: 10%;
     top: 50%;
     transform: translateY(-50%);
+  }
+  a{
+    color: white;
   }
 </style>
